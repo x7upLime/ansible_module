@@ -15,8 +15,17 @@ $ ansible-galaxy collection build ./andrewdomain/custom_modules/
 $ ansible-galaxy collection install ./andrewdomain/custom_modules/
 ```
 
-The collection is then saved (depending on the system you're using) in *~/.ansible/collections/*  
+The collection is then saved (depending on the system you're using) in *~/.ansible/collections/ansible_collections/*  
 A simple *rm -rf ~/.ansible/collections/andrewdomain* should be enough to "uninstall" it.
+
+There is also a make.sh that you can execute as
+```bash
+# installs collection without bumping the galaxy.yml version
+$ ./make.sh
+
+# purges collection
+$ ./make.sh uninstall
+```
 
 # Testing the module
 After installing the collection (see above).
