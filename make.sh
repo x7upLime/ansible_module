@@ -12,7 +12,7 @@ then
     else
 	echo 'you mean "uninstall" ?'
 	echo "got $@"
-	exit
+	exit 1
     fi
 fi
 
